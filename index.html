@@ -62,16 +62,18 @@
             width: 1200px;
             margin: 20px auto 20px auto
         }
+
         .mypost {
-         
-            width:500px;
-            margin:20px auto 20px auto;
-            padding : 20px 20px 20px 20px;
+
+            width: 500px;
+            margin: 20px auto 20px auto;
+            padding: 20px 20px 20px 20px;
 
             box-shadow: 0px 0px 3px 0px gray;
-        
+
         }
-        .mybtn{
+
+        .mybtn {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -79,23 +81,34 @@
 
             margin-top: 20px;
         }
-        .mybtn > button {
-            margin-right:10px;
-        
-        }
 
+        .mybtn>button {
+            margin-right: 10px;
+
+        }
     </style>
 </head>
 
 <body>
     <div class="mytitle">
-        <h1>내 생애 최고의 영화들!!</h1>
+        <h1>내 생애 최고의 영화들!</h1>
         <button>영화 기록하기</button>
     </div>
     <div class="mypost">
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화URL</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>선택하기</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
         </div>
         <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
